@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+.btn-primary{ transition: all 1s}
+.card{
+	position: relative;
+	overflow: hidden
+}
+.card-body {
+	position: absolute;
+	background: rgba(0,0,0,0.25);
+	color: #fff;
+	width: 80%;
+	left: 10%;
+	bottom: -50%;
+	transition: all 1s;
+	/*transform: scaleX(0);
+	transform-origin: left center;
+	opacity: 0*/
+}
+.card img{	transition: all 1s}
+
+.card:hover >img
+{
+	transform: scale(1.6) rotate(-15deg) 
+}
+.card:hover >.card-body
+{
+	bottom:10%;
+	/*transform: scaleX(1);
+	opacity: 1
+	*/
+}
+#carouselExampleIndicators1 .carousel-caption
+{
+	width: 30%;
+	top: 20%;	
+	left: 55%;
+	text-align: left
+	}
+#carouselExampleIndicators1 .carousel-caption-center
+{
+	width: 50%;
+	top: 20%;	
+	left: 25%;
+	text-align: center
+	}
+
+/*responsive text trong carousel*/
+@media (max-width:960px){
+#carouselExampleIndicators1 .img-fluid
+{
+	height: 50vh
+}
+	#carouselExampleIndicators1 .carousel-caption
+{
+	width: 70%;
+	top: 10%;	
+	left: 15%;
+	text-align: center
+	}
+	#carouselExampleIndicators1 .carousel-caption .display-3{
+		font-size: 2rem;
+		font-weight: 600
+	}
+	.carousel-indicators li { 
+  	width: 12px;
+  	height: 12px;
+	}
+}
+
+#danhmuc .btn{
+	position: absolute;
+	width: 90%;
+	text-align: center;
+	bottom: -30px; left: 5%;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 15px;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+	border: 1px solid rgba(255,255,255,0.5)
+}
+
+#loi-ich img{
+	height: 120px
+}
+/*------------------- style cho vung san pham---------------*/
+.icon-sp
+{
+	position: absolute;
+	width:80%; height: 70%;
+	background: rgba(0,0,0,0.3);
+	top: 10%; left: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+	transform: scale(0);
+	opacity: 0
+}
+.icon-sp a{ margin: 20px; color: #fff; }
+.sanpham:hover >.icon-sp
+{
+	transform: scale(1);
+	opacity: 1
+}
